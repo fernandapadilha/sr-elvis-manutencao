@@ -46,52 +46,48 @@ import { reactive } from 'vue';
 </script>
 
 <template>
-    <form v-if="!validacao" class="cadastro">
+    <form class="cadastro">
       <h2>Cadastro</h2>
 
-      <div class="form-group">
-        <label for="">Nome:</label>
-        <input class="form-control" type="text" v-model="cadastro.nome" />
-      </div>
+        <div class="form-group">
+          <input class="form-control" placeholder="Nome Completo" type="text" v-model="cadastro.nome" />
+        </div>
 
-      <div class="form-group">
-        <label for="">Email:</label>
-        <input class="form-control" type="text" v-model="cadastro.email" />
-      </div>
+        <div class="form-group">
+          <input class="form-control" placeholder="CPF" type="number" v-model="cadastro.cpf" />
+        </div>
 
-      <div class="form-group">
-        <label for="">Senha:</label>
-        <input class="form-control" type="password" v-model="cadastro.senha" />
-      </div>
+        <div class="form-group">
+          <input class="form-control" placeholder="Email" type="text" v-model="cadastro.email" />
+        </div>
 
-      <div class="form-group">
-        <label for="">CPF:</label>
-        <input class="form-control" type="password" v-model="cadastro.cpf" />
-      </div>
+        <div class="form-group">
+          <input class="form-control" placeholder="Data de Nascimento" type="text" v-model="cadastro.dataNascimento" />
+        </div>
 
-      <div class="form-group">
-        <label for="">Nascimento:</label>
-        <input class="form-control" type="text" v-model="cadastro.dataNascimento" />
-      </div>
+        <div class="form-group">
+          <input class="form-control" placeholder="Senha" type="password" v-model="cadastro.senha" />
+        </div>
 
-      <div class="form-group">
-        <label for="">Telefone:</label>
-        <input class="form-control" type="text" v-model="cadastro.telefone" />
-      </div>
+        <div class="form-group">
+          <select v-model="sexo">
+          <option value="masculino">Masculino</option>
+          <option value="feminino">Feminino</option>
+          </select>
+          
+        </div>
 
-      <div class="form-group">
-        <label for="estado">Estado:</label>
-        <select class="form-control" name="estado" id="estado" v-model="cadastro.estado">
-          <option v-for="estado in cadastro.estados" :key="estado.sigla" :value="estado.sigla"> {{ estado.nome }} </option>
-        </select>
-      </div>
+        <div class="form-group">
+          <label for="estado">Estado:</label>
+          <select class="form-control" name="estado" id="estado" v-model="cadastro.estado">
+            <option v-for="estado in cadastro.estados" :key="estado.sigla" :value="estado.sigla"> {{ estado.nome }} </option>
+          </select>
+        </div>
 
-      <div class="form-group">
-        <label for="">Hobbie:</label>
-        <input class="form-control" type="text" v-model="cadastro.hobbie" />
-      </div>
+        <div class="form-group">
+          <input class="form-control" placeholder="Telefone" type="text" v-model="cadastro.telefone" />
+        </div>
 
-      
 
       <div>
         <button type="button" class="btn btn-primary" @click="$emit('envio', {...cadastro})"> Mostrar </button>
@@ -101,5 +97,18 @@ import { reactive } from 'vue';
 </template>
 
 <style scoped>
- 
+.form-group{
+width: 3%;
+display: grid;
+grid-template-columns: center;
+}
+.cadastro{
+  display: grid;
+  justify-content: center;
+}
+.form-control{
+  border-radius: 10px;
+}
+
+
 </style>

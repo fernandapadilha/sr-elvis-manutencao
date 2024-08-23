@@ -10,6 +10,26 @@
         <div class="body">
             <img class="img" src="@/assets/img/capinhasxs_iphone.jpg" alt="capinhas xs">
             <img class="img" src="@/assets/img/capas.webp" alt="capinhas samsung">
+            <p>R$</p>
+            <p>R$</p> 
+            <p>capinha para Iphone XS</p>
+            <p>capinha para Samsung</p>
+        </div>
+        <div class="body">
+            <img class="img" src="@/assets/img/capinhasxs_iphone.jpg" alt="capinhas xs">
+            <img class="img" src="@/assets/img/capas.webp" alt="capinhas samsung">
+            <p>R$</p>
+            <p>R$</p> 
+            <p>capinha para Iphone XS</p>
+            <p>capinha para Samsung</p>
+        </div>
+        <div class="body">
+            <img class="img" src="@/assets/img/capinhasxs_iphone.jpg" alt="capinhas xs">
+            <img class="img" src="@/assets/img/capas.webp" alt="capinhas samsung">
+            <p>R$</p>
+            <p>R$</p> 
+            <p>capinha para Iphone XS</p>
+            <p>capinha para Samsung</p>
         </div>
     </section>
 </template>
@@ -21,14 +41,21 @@
     margin-top: 1rem
 }
 .img{
-    height: 30rem;
+    height: 25rem;
     margin: 2%;
+    align-items: center;
+    border-radius: 15px;
 }
 .body{
     display: grid;
-  align-items: center;
-  grid-template-columns: 50% 50%;
-  margin: 10%;
+    align-items: center;
+    grid-template-columns: auto auto;
+    margin-left: 17%;
+    margin-top: 5%;
+    
 }
-
+p{
+    text-align: auto auto;
+    margin-left: 17%;
+}
 </style>
