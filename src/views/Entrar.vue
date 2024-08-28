@@ -88,8 +88,8 @@ import { reactive } from 'vue';
         </div>
 
 
-      <div>
-        <button type="button" class="btn btn-primary" @click="$emit('envio', {...cadastro})"> Mostrar </button>
+      <div class="div-button">
+        <button type="button" class="btn btn-primary button" @click="$emit('envio', {...cadastro})"> Enviar </button>
       </div>
     </form>
 
@@ -99,7 +99,7 @@ import { reactive } from 'vue';
 .padding {
   padding: 2.3rem;
   background-color: var(--cor-blue);
-  margin-top: 1rem
+  margin-top: 1rem 
 }
 .cadastro{
   display: grid;
@@ -118,6 +118,17 @@ import { reactive } from 'vue';
   width: 100%;
   border: 1px solid var(--cor-black);
   border-radius: 15px;
+}
+.div-button {
+  display: grid;
+  justify-content: center;
+}
+
+.button {
+  padding: 1rem;
+  border: 1px solid var(--cor-black);
+  background-color: white;
+  color: black;
 }
 
 </style>

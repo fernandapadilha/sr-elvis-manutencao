@@ -79,6 +79,7 @@ header {
 .list li a {
   color: var(--cor-black);
   display: flex;
+  text-decoration: none;
   column-gap: 0.5rem;
   align-items: center;
 }
@@ -92,6 +93,7 @@ header {
   grid-template-columns: auto auto;
   align-items: center;
   column-gap: .5rem;
+  text-decoration: none;
   color: var(--cor-black);
 }
 
@@ -128,5 +130,9 @@ header {
 
 .footer svg {
   width: 2.5rem;
+}
+
+p {
+  margin: 0;
 }
 </style>

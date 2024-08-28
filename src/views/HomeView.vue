@@ -4,9 +4,9 @@
     <section>
         <div class="padding">
         <div class="container">
-            <div class="item cabecalho">Oferecemos um atendimento personalizado e orçamentos</div>
+            <div class="item-cabecalho">Oferecemos um atendimento personalizado e orçamentos</div>
 
-            <div class="item menu-lateral">
+            <div class="item-menu-lateral">
             <p>No Sr. Elvis, estamos comprometidos em oferecer serviços de alta qualidade para atender todas as suas
                 necessidades relacionadas a celulares. Nossa missão é proporcionar soluções rápidas e eficazes, garantindo a
                 melhor experiência para você.</p>
@@ -35,10 +35,11 @@
   margin-top: 2%;
   background-color: var(--cor-blue);
   margin-bottom: 5%;
+  display: grid;
 }
 
 .container {
-  padding: 10rem;
+  padding:10rem;
   display: grid;
   grid-template: 100px 150px 100px / 1fr 1fr;
   grid-template-areas:
@@ -46,15 +47,16 @@
     "menu-lateral principal principal";
 
 }
-
-.cabecalho {
+.item-cabecalho {
   grid-area: cabecalho;
   text-align: center;
+  font-size: x-large;
 
 }
 
-.menu-lateral {
+.item-menu-lateral {
   grid-area: menu-lateral;
+  font-size: x-large;
 }
 
 .principal {
@@ -73,6 +75,7 @@
 
 .item {
   font-size: 2rem;
+
 }
 
 .contem {
@@ -95,4 +98,5 @@ h4 {
 img {
   border-radius: 20px;
 }
+
 </style>
