@@ -3,7 +3,17 @@
 </script>
 
 <template>
-    <h1>Oi</h1>
+   <div class="padding">
+      <h3>MANUTENÇÃO</h3>
+    </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.padding {
+    padding: 2.3rem;
+    background-color: var(--cor-blue);
+    margin-top: 1rem
+}
+
+
+</style>

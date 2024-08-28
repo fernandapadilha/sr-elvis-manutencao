@@ -33,7 +33,7 @@
 <style scoped>
     .padding {
   margin-top: 2%;
-  background-color: #FFFF48;
+  background-color: var(--cor-blue);
   margin-bottom: 5%;
 }
 

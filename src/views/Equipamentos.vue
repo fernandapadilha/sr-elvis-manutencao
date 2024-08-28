@@ -37,7 +37,7 @@
 <style scoped>
 .padding{
     padding: 2.3rem;
-    background-color: #F2E4BB;
+    background-color: var(--cor-blue);
     margin-top: 1rem
 }
 .img{

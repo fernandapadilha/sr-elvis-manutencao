@@ -46,15 +46,16 @@ import { reactive } from 'vue';
 </script>
 
 <template>
+    <div class="padding">
+      <h3>CADASTRO</h3>
+    </div>
     <form class="cadastro">
-      <h2>Cadastro</h2>
-
         <div class="form-group">
           <input class="form-control" placeholder="Nome Completo" type="text" v-model="cadastro.nome" />
         </div>
 
         <div class="form-group">
-          <input class="form-control" placeholder="CPF" type="number" v-model="cadastro.cpf" />
+          <input class="form-control" placeholder="CPF" type="text" v-model="cadastro.cpf" />
         </div>
 
         <div class="form-group">
@@ -71,15 +72,13 @@ import { reactive } from 'vue';
 
         <div class="form-group">
           <select v-model="sexo">
-          <option value="masculino">Masculino</option>
-          <option value="feminino">Feminino</option>
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
           </select>
-          
         </div>
 
         <div class="form-group">
-          <label for="estado">Estado:</label>
-          <select class="form-control" name="estado" id="estado" v-model="cadastro.estado">
+          <select name="estado" id="estado" v-model="cadastro.estado">
             <option v-for="estado in cadastro.estados" :key="estado.sigla" :value="estado.sigla"> {{ estado.nome }} </option>
           </select>
         </div>
@@ -97,18 +96,28 @@ import { reactive } from 'vue';
 </template>
 
 <style scoped>
-.form-group{
-width: 3%;
-display: grid;
-grid-template-columns: center;
+.padding {
+  padding: 2.3rem;
+  background-color: var(--cor-blue);
+  margin-top: 1rem
 }
 .cadastro{
   display: grid;
   justify-content: center;
-}
-.form-control{
-  border-radius: 10px;
+  row-gap: 2rem;
+  padding: 10rem 0;
+  
 }
 
+.form-group {
+  width: 50vw;
+}
+
+.form-group input, .form-group select {
+  padding: 1rem;
+  width: 100%;
+  border: 1px solid var(--cor-black);
+  border-radius: 15px;
+}
 
 </style>

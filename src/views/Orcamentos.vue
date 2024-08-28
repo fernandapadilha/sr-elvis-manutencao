@@ -2,8 +2,17 @@
 </script>
 
 <template>
-    <h1>o</h1>
+     <div class="padding">
+      <h3>ORÇAMENTOS</h3>
+    </div>
 </template>
 
 <style scoped>
+
+.padding {
+    padding: 2.3rem;
+    background-color: var(--cor-blue);
+    margin-top: 1rem
+}
+
 </style>
