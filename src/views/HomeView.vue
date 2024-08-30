@@ -12,7 +12,7 @@
                 melhor experiência para você.</p>
             </div>
 
-            <div class="item principal"><img src="@/assets/img/computador.png" alt="computador"></div>
+            <div class="item principal"><img src="@/assets/img/laptop.png" height="500px" alt="computador"></div>
         </div>
         </div>
 
@@ -22,7 +22,7 @@
             <h4>Disponibilizamos uma vasta gama de peças de reposição e acessórios para celulares.</h4>
             <div class="imagens">
                 <div class="contem"><img src="@/assets/img/capinha_amarela.jpg" alt="capa amarela" height="300px"></div>
-                <div class="contem"><img src="@/assets/img/capa_preta_iphone.webp" alt="capas-samsung" height="300px"></div>
+                <div class="contem"><img src="@/assets/img/capa_preta_iphone.jpg" alt="capas-samsung" height="300px"></div>
             </div>
         </div>
     </section>
@@ -60,7 +60,7 @@
 .principal {
   grid-area: principal;
   text-align: right;
-  width: 600px;
+  width: 200px;
 
 }
 

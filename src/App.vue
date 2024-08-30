@@ -18,7 +18,6 @@
     <ul class="list">
       <li><router-link to="/manutencao">Manutenção</router-link></li>
       <li><router-link to="/equipamentos">Equipamentos</router-link></li>
-      <li><router-link to="/orcamentos">Orçamentos</router-link></li>
       <li><router-link to="/entrar">
         <p>Entrar</p>
         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
