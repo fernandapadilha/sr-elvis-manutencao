@@ -8,11 +8,11 @@
             <h3>EQUIPAMENTOS</h3>
         </div>
         <div class="body">
-            <img class="img" src="@/assets/img/capinhasxs_iphone.jpg" alt="capinhas xs">
+            <img class="img" src="../assets/img/capinha1.png" alt="capinhas xs">
             <img class="img" src="@/assets/img/capas.webp" alt="capinhas samsung">
-            <p>R$</p>
+            <p>R$109,90</p>
             <p>R$</p> 
-            <p>capinha para Iphone XS</p>
+            <p>Capinha para celular Good Things Take Time</p>
             <p>capinha para Samsung</p>
         </div>
         <div class="body">

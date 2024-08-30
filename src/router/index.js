@@ -1,9 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import Manutencao from '@/views/Manutencao.vue'
-import Equipamentos from '@/views/Equipamentos.vue'
-import Orcamentos from '@/views/Orcamentos.vue'
-import Entrar from '@/views/Entrar.vue'
+import ManutencaoServicos from '@/views/ManutencaoServicos.vue'
+import Equipamentos from '@/views/EquiPamentos.vue'
+import EntrarForm from '@/views/EntrarForm.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -16,7 +15,7 @@ const router = createRouter({
     {
       path: '/manutencao',
       name: 'manutencao',
-      component: Manutencao,
+      component: ManutencaoServicos,
     },
     {
       path: '/equipamentos',
@@ -24,14 +23,9 @@ const router = createRouter({
       component: Equipamentos,
     },
     {
-      path: '/orcamentos',
-      name: 'orcamentos',
-      component: Orcamentos,
-    },
-    {
       path: '/entrar',
       name: '/entrar',
-      component: Entrar,
+      component: EntrarForm,
     }
   ]
 })

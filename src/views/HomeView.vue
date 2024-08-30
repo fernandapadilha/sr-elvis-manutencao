@@ -19,9 +19,7 @@
     </section>
     <section>
         <div>
-
             <h4>Disponibilizamos uma vasta gama de peças de reposição e acessórios para celulares.</h4>
-
             <div class="imagens">
                 <div class="contem"><img src="@/assets/img/capinha_amarela.jpg" alt="capa amarela" height="300px"></div>
                 <div class="contem"><img src="@/assets/img/capa_preta_iphone.webp" alt="capas-samsung" height="300px"></div>
