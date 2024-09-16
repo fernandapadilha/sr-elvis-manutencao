@@ -12,7 +12,7 @@
                 melhor experiência para você.</p>
             </div>
 
-            <div class="item principal"><img src="@/assets/img/laptop.png" height="500px" alt="computador"></div>
+            <div class="item-principal"><img src="@/assets/img/laptop.png" alt="computador"></div>
         </div>
         </div>
 
@@ -48,20 +48,13 @@
 .item-cabecalho {
   grid-area: cabecalho;
   text-align: center;
-  font-size: x-large;
+  font-size: 1.7rem;
 
 }
 
 .item-menu-lateral {
   grid-area: menu-lateral;
   font-size: x-large;
-}
-
-.principal {
-  grid-area: principal;
-  text-align: right;
-  width: 200px;
-
 }
 
 .imagens {
@@ -71,8 +64,16 @@
 
 }
 
-.item {
-  font-size: 2rem;
+.item-principal {
+  grid-area: principal;
+  text-align: right;
+  height: 15rem;
+
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
 }
 
